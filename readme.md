@@ -17,7 +17,11 @@ After completing this lab, students will be able to:
 Handout code is provided in [index.html](index.html).
 
 1. Use the [API](https://vpic.nhtsa.dot.gov/api) provide by the [NHTSA](https://www.nhtsa.gov/) to fetch a JSON array of vehicles that match a supplied make.
-2. Place the vehicles provided in the array into the `tbody` provided in the results `table`.
+
+2. Place the vehicles provided by the API into the `tbody` provided in the results `table`.
+
+> [!TIP]
+> An `update` function has been provided for you that will be called when the value of the search input has changed
 
 ## Resources
 
