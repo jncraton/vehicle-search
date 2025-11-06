@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vehicle Search</title>
+    <style>
+      :root {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 24px;
+        line-height: 1.6;
+        font-family: sans-serif;
+        background-color: #eee;
+      }
+
+      main > * {
+        margin-block: 1rem;
+      }
+
+      label,
+      input {
+        display: block;
+        font-size: 1rem;
+        font-family: inherit;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      caption {
+        text-align: left;
+        font-size: 120%;
+        font-weight: bold;
+      }
+
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>Vehicle Search</h1>
+      <label>Vehicle Make<input type="search" name="make" autocomplete="off" placeholder="Search for make..." /></label>
+      <table>
+        <caption>
+          Results
+        </caption>
+        <thead>
+          <tr>
+            <th>Make</th>
+            <th>Model</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <script>
+      function update() {}
+
+      // Bind update to input change with a 300ms debounce
+      let updateTimeout
+      document.querySelector('input').addEventListener('input', () => {
+        clearTimeout(updateTimeout)
+        updateTimeout = setTimeout(update, 300)
+      })
+    </script>
+  </body>
+</html>
