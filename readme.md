@@ -21,5 +21,5 @@ Handout code is provided in [index.html](index.html).
 
 ## Resources
 
+- [MDN: Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [MDN: Events](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events)
-- [API](https://vpic.nhtsa.dot.gov/api)
