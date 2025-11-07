@@ -9,7 +9,7 @@ A vehicle search tool
 After completing this lab, students will be able to:
 
 1. Attach event listeners to DOM elements
-2. Get JSON data using `fectch()`
+2. Get JSON data using `fetch()`
 3. Use `async` and `await` to manage Promises
 
 ## Task
